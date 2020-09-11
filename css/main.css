@@ -2,3 +2,189 @@
 @import "./styles.css";
 
 /* write our styles here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+margin: 0;
+display: grid;
+grid-template-columns: 1fr 1fr;
+min-height: 100vh;
+}
+
+/* Variables */
+
+:root {
+	--primaryColor : rgb(50, 47, 80);
+}
+
+/* Sizing */
+
+.text-center {
+	text-align: center;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.w-80 {
+	width: 80%;
+}
+
+.w-90 {
+	width: 90%;
+}
+
+.w-100 {
+	width: 100% !important;
+}
+
+/* Display */
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mt-80 {
+	margin-top: 80px;
+}
+.grid {
+	display: grid;
+}
+
+.grid-col-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.gap-20 {
+	column-gap: 20px;
+}
+
+.row {
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-evenly;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* Texts */
+
+p {
+  color: rgb(166, 167, 171);
+}
+
+/* Colors */
+
+.primary-font {
+  color: var(--primaryColor);
+}
+
+
+.aside {
+  background-image: url(../assets/nature.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  background-size: contain;
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding-top: 20px; */
+}
+
+.form-container {
+  padding-top: 20px;
+	color: rgba(50, 47, 80, 1);
+}
+
+/* Input */
+
+.input-group {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.input-group input{
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: .5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(233, 235, 245);
+  transition: 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+  border-bottom: 2px solid var(--primaryColor);
+}
+
+.login-btn {
+	padding: 9px 40px;
+	border-radius: 3px;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(66, 66, 92);
+	color: #fcfeff;
+	margin-left: 20px;
+}
+
+.login-btn:hover {
+	background-color: whitesmoke;
+	color: #4e4f53;
+	transition: 0.3s ease-in-out;
+	border: 1px solid rgb(66, 66, 92);
+}
+
+.sign_up_btn {
+	padding: 9px 40px;
+	border-radius: 3px;
+	cursor: pointer;
+	border: 1px solid rgb(66, 66, 92);
+	background-color: whitesmoke;
+	color: #4e4f53;
+	margin-right: 30px;
+	text-decoration: none;
+}
+
+.sign_up_btn:hover {
+	background-color: rgb(81, 81, 136);
+	color: #fcfeff;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+
+/* Error message */
+.err-msg {
+  display: none;
+  background-color: #d8709350;
+  color: #ff0000;
+  padding: 1em;
+}
+
+
