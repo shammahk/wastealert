@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WasteAlert</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body> 
+  <main class="row flex-col mt-12">
+
+    <h1 class="text-center text-lg font-bold p-2">
+      WasteAlert
+    </h1>
+    <p class="text-center">
+      Welcome! Please complete to create your account.
+    </p>
+    
+    <div class="wrapper">
+      <div class="form-container w-80 mx-auto">
+        <form action="" method="POST" onsubmit="getSignUpData(event)">
+          <!-- First name and Last name -->
+          <div class="grid grid-col-2 gap-20 w-90 mx-auto">
+            <div class="input-group w-100">
+              <input type="text" name="firstname" id="firstname" placeholder="First name" required>
+              <label for="firstname">
+              </label>
+            </div>
+                  
+            <div class="input-group w-100">
+              <input type="text" name="lastname" id="lastname" placeholder="Last name" required>
+              <label for="lastname">
+              </label>
+            </div>
+           </div>
+              
+            <div class="input-group">
+              <input type="text" name="username" id="username" placeholder="Username" required>
+              <label for="username">
+              </label>
+            </div>
+            
+            <div class="input-group">
+              <input type="email" name="email" id="email" placeholder="Email" required>
+              <label for="email">
+              </label>
+            </div>
+
+            <div class="input-group"> 
+              <input type="password" name="password" id="password" placeholder="Password" minlength="8" required>
+              <label for="password">
+              </label>
+            </div>
+            
+            <div class="input-group"> 
+              <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" minlength="8" required oninput="validatePassword(event)">
+              <label for="cpassword">
+              </label>
+            </div>
+
+            <!-- error message -->
+            <!-- <p class="err-msg mx-auto w-90">
+              Passwords are not identical
+            </p> -->
+
+            <div class="grid grid-col-2 gap-20 w-100 mt-30 ml-40 items-center">
+              <div class="w-100">
+              <input type="checkbox" name="remember-me" id="remember-me" required>
+              <label for="remember-me">
+                I agree with terms and conditions
+              </label>
+              </div>
+            </div>
+                
+            <div class="ml-48 mt-5">
+              <input type="submit" value="SIGN UP" class="sign_up_btn">
+            </div>
+
+            <p class="text-center mt-4">
+              Already have an account? 
+              <a class="link" href="./login.html">
+                Sign in
+              </a>
+            </p>
+        </form>
+      </div>
+    </div>
+  </main>
+  <aside class="aside bg-right"></aside>
+</body>
+
+<script src="></script>
+</html>
