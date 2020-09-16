@@ -4,7 +4,7 @@
 /* Adobe CSS */
 :root {
 
-	/* Colors: */
+/* Colors: */
 	--primary-font: #292929;
 	--white-bg: #FFFFFF;
 	--dashboard-bg: #F5F6FA;
@@ -24,10 +24,10 @@
 	--blue-accent: #1976D2;
 	--header-bg: #D1FFF7;
 	
-	/* Font/text values */
+/* Font/text values */
 	--unnamed-font-family-montserrat: Montserrat;
 	--unnamed-font-family-raleway: Raleway;
-	--unnamed-font-family-open-sans: Open Sans;
+	--unnamed-font-family-open-sans: OpenSans;
 	--unnamed-font-style-normal: normal;
 	--unnamed-font-weight-600: 600px;
 	--unnamed-font-weight-normal: normal;
@@ -45,8 +45,8 @@
 	--unnamed-text-transform-uppercase: uppercase;
 	}
 	
-	/* Character Styles */
-	.new-paragraph-black {
+/* Character Styles */
+.new-paragraph-black {
 	font-family: var(--unnamed-font-family-montserrat);
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-normal);
@@ -54,8 +54,9 @@
 	line-height: var(--unnamed-line-spacing-24);
 	letter-spacing: var(--unnamed-character-spacing-0);
 	color: var(--primary-font);
-	}
-	.paagraph-black {
+}
+
+.paragraph-black {
 	font-family: var(--unnamed-font-family-montserrat);
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-normal);
@@ -63,8 +64,9 @@
 	line-height: var(--unnamed-line-spacing-29);
 	letter-spacing: var(--unnamed-character-spacing-0);
 	color: var(--primary-font);
-	}
-	.paragraph-white {
+}
+
+.paragraph-white {
 	font-family: var(--unnamed-font-family-montserrat);
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-normal);
@@ -72,8 +74,9 @@
 	line-height: var(--unnamed-line-spacing-29);
 	letter-spacing: var(--unnamed-character-spacing-0);
 	color: var(--white-bg);
-	}
-	.header-3 {
+}
+
+.header-3 {
 	font-family: var(--unnamed-font-family-montserrat);
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-600);
@@ -81,8 +84,9 @@
 	line-height: var(--unnamed-line-spacing-29);
 	letter-spacing: var(--unnamed-character-spacing-0);
 	color: var(--primary-font);
-	}
-	.header-2 {
+}
+
+.header-2 {
 	font-family: var(--unnamed-font-family-montserrat);
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-600);
@@ -90,8 +94,9 @@
 	line-height: var(--unnamed-line-spacing-39);
 	letter-spacing: var(--unnamed-character-spacing-0);
 	color: var(--primary-font);
-	}
-	.header-1 {
+}
+
+.header-1 {
 	font-family: var(--unnamed-font-family-montserrat);
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-medium);
@@ -99,8 +104,9 @@
 	line-height: var(--unnamed-line-spacing-54);
 	letter-spacing: var(--unnamed-character-spacing-0);
 	color: var(--header-text);
-	}
-	.nav-link {
+}
+
+.nav-link {
 	font-family: var(--unnamed-font-family-raleway);
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-normal);
@@ -109,8 +115,9 @@
 	letter-spacing: var(--unnamed-character-spacing-0);
 	color: var(--white-bg);
 	text-transform: var(--unnamed-text-transform-uppercase);
-	}
-	.form {
+}
+	
+.form {
 	font-family: var(--unnamed-font-family-open-sans);
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-normal);
@@ -126,10 +133,11 @@
 }
 
 body {
-margin: 0;
-display: grid;
-grid-template-columns: 1fr 1fr;
-min-height: 100vh;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	min-height: 100vh;
+	font-family: 'Bambino', 'Montserrat', 'Raleway', 'OpenSans',;
 }
 
 /* Variables */
@@ -226,13 +234,7 @@ min-height: 100vh;
 /* Texts */
 
 p {
-  color: rgb(166, 167, 171);
-}
-
-/* Colors */
-
-.primary-font {
-  color: var(--primaryColor);
+  color: var(--primary-font);
 }
 
 
@@ -242,13 +244,11 @@ p {
   background-position: left;
   background-attachment: fixed;
   background-size: contain;
-  font-family: Arial, Helvetica, sans-serif;
-  /* padding-top: 20px; */
 }
 
 .form-container {
   padding-top: 20px;
-	color: rgba(50, 47, 80, 1);
+	color: var(--light-font);
 }
 
 /* Input */
@@ -273,7 +273,7 @@ p {
 }
 
 .input-group input:focus {
-  border-bottom: 2px solid var(--primaryColor);
+  border-bottom: 2px solid var(--accent);
 }
 
 .login-btn {
@@ -281,38 +281,38 @@ p {
 	border-radius: 3px;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(66, 66, 92);
+	background-color: var(--accent);
 	color: #fcfeff;
 	margin-left: 20px;
 }
 
 .login-btn:hover {
-	background-color: whitesmoke;
-	color: #4e4f53;
+	background-color: #FFFFFF;
+	color: var(--accent);
 	transition: 0.3s ease-in-out;
-	border: 1px solid rgb(66, 66, 92);
+	border: 1px solid var(--accent);
 }
 
 .sign_up_btn {
 	padding: 9px 40px;
 	border-radius: 3px;
 	cursor: pointer;
-	border: 1px solid rgb(66, 66, 92);
-	background-color: whitesmoke;
-	color: #4e4f53;
+	border: 1px solid var(--accent);
+	background-color: #FFFFFF;
+	color: var(--accent);
 	margin-right: 30px;
 	text-decoration: none;
 }
 
 .sign_up_btn:hover {
-	background-color: rgb(81, 81, 136);
+	background-color: var(--accent);
 	color: #fcfeff;
   transition: 0.3s ease-in-out;
   border: none;
 }
 
 .link {
-	color: brown;
+	color: var(--primary-font);
 }
 
 .link:hover {

@@ -3,10 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/main.css">
   <title>WasteAlert</title>
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-  
+  <aside class="aside"></aside>
+  <main class="row flex-col justify-center">
+
+    <!-- <div class="mx-auto mb-4"> -->
+    <img src="../assets/logo text.svg" alt="logo-text" class="mb-4">
+    <!-- </div> -->
+    <p class="text-center">
+      Welcome back! Please login to your account.
+    </p>
+          
+      <div class="wrapper">
+       <div class="form-container w-50 mx-auto">
+        <form action="" method="POST" onsubmit="logUserIn(event)">
+          <div class="input-group ">
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            <!-- <label for="username">
+            </label> -->
+          </div>
+      
+          <div class="input-group"> 
+              <input type="password" name="password" id="password" placeholder="Password" required>
+              <label for="password">
+              </label>
+          </div>
+                  
+          <div class="grid grid-col-2 gap-20 w-90 mx-auto mt-30 items-center">
+            <div class="w-100">
+              <input type="checkbox" name="remember-me" id="remember-me" required>
+              <label for="remember-me">
+                Remember me
+              </label> 
+            </div>
+              
+            <a class="link" href="http://" target="_blank">
+              Forgot Password
+            </a>
+          
+          </div>
+
+      
+          <div class="text-center mt-6">
+            <input type="submit" value="LOGIN" class="login-btn">
+          </div>
+          
+          <p class="text-center ml-4 mt-8 font-bold">
+            <a class="link" href="signup.html">
+              Create an account
+            </a>
+          </p>
+         
+
+          </form>
+          </div>
+      </div>
+  </main>
+
+
+<script src="./js/main.js"></script>
+
 </body>
 </html>
