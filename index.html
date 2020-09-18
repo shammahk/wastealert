@@ -6,7 +6,7 @@
   <title>WasteAlert</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
+<body class="forms">
   <aside class="aside"></aside>
   <main class="row flex-col justify-center">
 
@@ -65,6 +65,12 @@
 
 
 <script src="./js/main.js"></script>
+<script>
+  const logUserIn = event => {
+    event.preventDefault();
+    window.location= '/pages/dashboardFeed.html'
+  }
+</script>
 
 </body>
 </html>
