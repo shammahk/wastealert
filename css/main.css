@@ -44,6 +44,8 @@
 	--unnamed-font-size-32: 32px;
 	--unnamed-font-size-44: 44px;
 	--unnamed-character-spacing-0: 0px;
+	--unnamed-line-spacing-20: 20px;
+	--unnamed-line-spacing-24: 22px;
 	--unnamed-line-spacing-24: 24px;
 	--unnamed-line-spacing-29: 29px;
 	--unnamed-line-spacing-39: 39px;
@@ -57,9 +59,20 @@
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-normal);
 	font-size: var(--unnamed-font-size-12);
-	line-height: var(--unnamed-line-spacing-24);
+	line-height: var(--unnamed-line-spacing-20);
 	letter-spacing: var(--unnamed-character-spacing-0);
 	color: var(--primary-font);
+	opacity: 0.75;
+}
+
+.p-green-secondary {
+	font-family: var(--unnamed-font-family-montserrat);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-normal);
+	font-size: var(--unnamed-font-size-12);
+	line-height: var(--unnamed-line-spacing-24);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--green-secondary);
 	opacity: 0.75;
 }
 
@@ -67,7 +80,7 @@
 	font-family: var(--unnamed-font-family-montserrat);
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-normal);
-	font-size: var(--unnamed-font-size-24);
+	font-size: var(--unnamed-font-size-18);
 	line-height: var(--unnamed-line-spacing-29);
 	letter-spacing: var(--unnamed-character-spacing-0);
 	color: var(--primary-font);
@@ -83,14 +96,24 @@
 	color: var(--white-bg);
 }
 
+.header-4 {
+	font-family: var(--unnamed-font-family-montserrat);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: 500;
+	font-size: var(--unnamed-font-size-24);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--header-text);
+	opacity: 1;
+}
+
 .header-3 {
 	font-family: var(--unnamed-font-family-montserrat);
 	font-style: var(--unnamed-font-style-normal);
-	font-weight: var(--unnamed-font-weight-600);
+	font-weight: 600;
 	font-size: var(--unnamed-font-size-24);
 	line-height: var(--unnamed-line-spacing-29);
 	letter-spacing: var(--unnamed-character-spacing-0);
-	color: var(--primary-font);
+	color: var(--accent);
 }
 
 .header-2 {
@@ -481,9 +504,31 @@ li {
 
 .image-pic {
 	width: 328px;
-	height: 170px;
+	height: 175px;
 	margin-top: 20px;
-	padding-left: 35px;
+	/* padding-left: 35px; */
 	background-color: transparent;
 }
 
+/* feed styles */
+.border-secondary {
+	background-color: var(--border);
+	width: 90px;
+	border-radius: 3px;
+	align-content: center;
+	justify-content: center;
+}
+
+.social-holder {
+	/* width: 48px; */
+	/* height: 48px; */
+	border: 1px solid #707070;
+}
+
+.social-holder:hover {
+	background-color: var(--green-primary);
+}
+
+.social-holder:hover svg {
+	stroke: white;
+}
